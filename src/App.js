@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import './gameOver.css'
+
 import styled from 'styled-components';
 import {delay} from "q";
 import {ColoredBtn} from "./ColoredBtn";

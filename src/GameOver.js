@@ -1,5 +1,5 @@
 import React from "react";
-
+import './gameOver.css'
 
 export class GameOver extends React.Component {
 
