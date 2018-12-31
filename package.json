@@ -2,7 +2,7 @@
   "name": "SimonFEWeek",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://BorisBorshevsky.github.io/SimonFEWeek",
+  "homepage": "https://BorisBorshevsky.github.io/SimonFEWeek/",
   "dependencies": {
     "jquery": "^3.3.1",
     "react": "^16.7.0",

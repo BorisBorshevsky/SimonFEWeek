@@ -125,9 +125,26 @@ class App extends Component {
         return Promise.resolve()
     };
 
+
+    resize = () => this.forceUpdate()
+
+    componentDidMount() {
+        window.addEventListener('resize', this.resize)
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resize)
+    }
+
     render() {
+
+        let scale = 1/ (640 / window.innerWidth);
+        if (scale > 1) {
+            scale = 1;
+        }
+
         if (!this.state.gameOver) {
-            return (<div>
+            return (<div style={{transform: `scale(${scale})`, height: '640px'}}>
                 <GameContainer>
                     <div>
                         <ColoredBtn className="topLeft simonBtn" color={Green} clickCallback={this.onClick(Green)}
